@@ -470,6 +470,20 @@ input[type=checkbox] {
 }
 
 /* Button styling */
+.port-buttons-container-kinsley {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Default: 4 per row */
+.port-buttons-container-kinsley a {
+  flex: 1 1 calc(25% - 1rem);
+  text-decoration: none;
+}
+
+/* Button styling */
 .port-button-kinsley {
   background-color: #f1f1f1;
   text-align: center;
@@ -483,6 +497,20 @@ input[type=checkbox] {
 .port-button-kinsley:hover {
   background-color: var(--first-color);
   color: #FFFFFF;
+}
+
+/* Medium screens: 2 per row */
+@media (max-width: 900px) {
+  .port-buttons-container-kinsley a {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+/* Small screens: 1 per row */
+@media (max-width: 600px) {
+  .port-buttons-container-kinsley a {
+    flex: 1 1 100%;
+  }
 }
 
 .resume-button {
