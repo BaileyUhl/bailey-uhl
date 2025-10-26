@@ -520,7 +520,8 @@ input[type=checkbox] {
 
 /* ===== FOOTER =====*/
 .footer{
-    background-color: var(--dark-color);
+    background-color: var(--first-color);
+    color: #FFFFFF;
     text-align: center;
     padding: 40px 0;
     margin-top: 80px;
